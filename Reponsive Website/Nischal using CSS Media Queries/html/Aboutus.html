@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--title-->
+	<title>Nischal</title>
+        <!--linkind css to gallery html-->
+    <link rel="stylesheet" type="text/css" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+         <!---------javascript-->
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        
+    <style>
+    #bar{
+    position: fixed;
+  text-align:left;
+   width: 220px;
+    line-height: 2.5;
+    background: black;
+    height: 750px;
+    z-index: 100;
+
+}
+
+#bar a{
+    text-decoration:none;
+    list-style: none;
+        color:grey;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+#bar a:hover{
+    color:white;
+    transition: 1s;
+}
+
+@media screen and (max-width:768px){
+    #bar{
+   width: 200px; 
+  padding: 0 0.5rem;
+
+}
+    #bar a{
+        font-size: 20px;
+        
+    }
+}
+.search{
+    position: absolute;
+    float: right;
+    right: 600px;
+    top:14.5px;
+    opacity: 0.6;
+}
+
+@media screen and (max-width:780px){
+    .search{
+        right:250px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+       #bar{
+
+   width: 150px; 
+ 
+}
+    #bar a{
+        font-size: 15px;     
+        
+    }
+} 
+    
+
+li{
+    list-style: none;
+}
+
+.toggle{
+    position: relative;
+    top: 15px;
+    float:right;
+    right:30px;
+   border: none;
+    background: none;
+    color:grey;
+    
+    
+}
+
+.toggle:hover{
+    color:white;
+    transition: 1s;
+}
+
+.head{
+    position: fixed;
+    background: black;
+   height: 50px;
+    opacity: 0.8;
+    width: 100%;
+}
+
+@media screen and (max-width:768px){
+    .head{
+        padding:o o.5rem;
+        
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .head{
+        padding:o 0.10rem;
+       
+    }
+    
+}
+
+.logo{
+   position: absolute;
+    top: 11.5px;
+   float: left;
+    left: 30px;
+    font-size: 25px;
+    color: white;
+    
+}
+ </style>
+        </head>
+    
+<body>
+     <!--Menu- Section-->
+         <header>
+        <!--logo and menu button-->
+        <div class="head">
+        
+            <div class="logo" href="index.html">Nischal</div>
+                  
+            <button class="toggle" id="toggle" style="font-size:15px"><i class="fa fa-bars"></i> Menu</button>
+            <div class="search">
+            <input type="text"  placeholder="Enter any key to search..."><button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+       
+        </div>
+            <!--logo and menu button end-->
+        
+    <!--menu bar--> 
+        <nav id="bar" hidden>
+        <ul class="menubar" >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/Gallery.html">Gallery</a></li>
+            <li><a href="../html/Aboutus.html">About Us</a></li>
+            <li><a href="../html/Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!--menubar end-->
+        </header>
+      <!--image-->
+        <div>   
+          
+        <img src="../img/1.jpg" class="image"></div>
+         
+<!--        Intro of my page.This sentence are for demo purpose only-->
+        <div>
+        <div class="text">About Us</div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+ 
+     <footer> &copy; Copyright 2018               Do not try to copy this website</footer>
+ 
+       <!--javascript-->
+<!--    for toggle which is used to hide and show menu bar-->
+        <script type="text/javascript">
+  $('#toggle').click(function(){
+$("#bar").slideToggle(1000);});
+            
+            
+</script>
+   
+    </body>
+</html>

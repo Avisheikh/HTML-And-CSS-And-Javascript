@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--meta give instructions on how to control the page dimensions and sclaing-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--title section-->
+	<title>Kirat chuli</title>
+        <!--css ---------->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!---------javascript-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+       
+</head>
+<body>
+     <!--Star of header-->
+	<header>
+   <!--Menu- Section-->
+        <nav class="Menu">
+        <ul hidden>
+			<li><a href="#" class="line">Home</a></li>
+			<li><a href="html/Gallery.html" >Gallery</a></li>
+			<li><a href="html/lifestyle.html">Lifestyle</a></li>
+			<li><a href="html/Thingstodo.html">Things To Do</a></li>
+			<li><a href="html/aboutus.html">About Us</a></li>
+			<li class="search"><input type="text"  placeholder="Enter any key to search..."><button type="submit"><i class="fa fa-search"></i></button></li>
+			</ul>
+       </nav>
+        
+           <!--toggle button-->
+         <div>
+        	<button class="toggle" id="toggle" style="font-size:28px"><i class="fa fa-gear"></i></button>
+        </div>
+        
+              <!--video for background-->
+
+         <div class="background">
+        <video id="mp4" perload="auto" autoplay="true" loop="loop" muted="muted"><source src="video/movie.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+        </video>
+        </div>
+           
+       
+        <!--for logo -->
+        <section>
+        <div>
+        <img class="flag "src="video/nepal-flag.gif">
+        </div>
+            </section>
+          </header>
+     <!--End of header-->
+    
+        <!--Heading and paragraphs-->
+         <div>
+        <h1>"Mother and Motherland are greater than Heaven"</h1>
+          <p>My definition to Nepal,"Beautiful country with the sweet taste of nature where everyone is welcome to taste the sweetness of our land.Nepalese people welcome's everyone with a great respect <span id="dots">.....</span><span id="more">"<!--for result more button--> and sharing there joy with every guest they have visted.Many beautiful mounatins, fast flowing rivers, high alltiudes lakes,beautiful jungles with beautiful animals and birds.Nepal is very rich country in culture,nature and traditon.</span></p><button onclick="myFunction()" id="myBtn" class="readmore">Read more</button><!--for result more button-->
+        </div>
+       
+       
+        
+     
+  
+    
+
+        
+        <!--javascript-->
+<!--    for toggle which is used to hide and show menu bar-->
+        <script type="text/javascript">
+  $('#toggle').click(function(){
+$("ul").slideToggle(1000);});
+
+//            for readmore and readless button
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+    
+  <footer> Copyright 2018  dnot try to copy this website</footer>
+</body>
+</html>

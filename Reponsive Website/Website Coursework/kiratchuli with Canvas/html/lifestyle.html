@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--title-->
+	<title>Kirat chuli</title>
+        <!--linkind css to gallery html-->
+        <link rel="stylesheet" type="text/css" href="../css/lifestyle.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+       
+</head>
+<body>
+    <!--canvas-->
+    	  <canvas></canvas>
+    <canvas></canvas>
+     <script type="text/javascript" src="../js/canvas.js"></script>
+	<header>
+     <!--Menu- Section-->
+         <div>
+        	<button class="toggle" id="toggle" style="font-size:28px"><i class="fa fa-gear"></i></button>
+        </div>
+        <nav class="Menu">
+        <ul hidden>
+			<li><a href="../index.html" class="line">Home</a></li>
+			<li><a href="../html/Gallery.html" >Gallery</a></li>
+			<li><a href="#">Lifestyle</a></li>
+			<li><a href="../html/Thingstodo.html">Things To Do</a></li>
+			<li><a href="../html/aboutus.html">About Us</a></li>
+			<li class="search"><input type="text"  placeholder="Enter any key to search..."><button type="submit"><i class="fa fa-search"></i></button></li>
+			</ul>
+       </nav>
+       <!--heading-->
+      
+        <div>
+        <h1>LIFESTYLE OF DIFFERENT CULTURES IN NEPAL</h1>
+        </div>
+          <!--Detail about lifestyle of differesnt cultures in nepal-->
+         <div class="foundation" hidden>
+            <img class="img" src="../img/gallery/kathmandu-swayambhunath-at-night-nepal-hd-470138.jpg">
+        <h2>Hindu foundation of the Kingdom of Nepal</h2>
+            <p class="hindu">Historians and local traditions say that a Hindu sage named "Ne" established himself in the valley of Kathmandu during prehistoric times, and that the word "Nepal" means the place protected ("pala" in Sanskrit) by the sage Ne.[3] He performed religious ceremonies at Teku, the confluence of the Bagmati and Bishnumati rivers.[4] According to legend he selected a pious cowherd to be the first of the many kings of the Gopala Dynasty.[3] These rulers are said to have ruled Nepal for over 500 years.[5] He selected Bhuktaman to be the first king in the line of the Gopal (Cowherd) Dynasty.[4] The Silncan Gopal dynasty ruled for 621 years. Yakshya Gupta was the last king of this dynasty.
+
+According to Skanda Purana, a rishi called "Ne" or "Nemuni" used to live in Himalaya.[6] In the Pashupati Purana, he is mentioned as a saint and a protector.[7] He is said to have practiced penance at the Bagmati and Kesavati rivers[8] and to have taught his doctrines there too.[3]</p>
+            <button class="hide" id="hide">Show Less</button>
+        </div>
+        <!--readmore button-->
+        <div class=readmore>
+       <img class="imgcss" src="../img/gallery/kathmandu-swayambhunath-at-night-nepal-hd-470138.jpg">
+            <p class="hinducss">Hindu foundation of the Kingdom of Nepal</p>
+            <button class="read" id="read">Read More</button>
+        </div>
+        
+        
+        
+        
+        <!--Detail of hindu tradition-->
+        <div class="foundation2" hidden>
+             <img class="img2" src="../img/gallery/different-styles-of-temples-in-pashupatinath-premises-kathmandu-nepal.jpeg">
+        <h3>Tradition Of Nepal</h3>
+            <p class="hindu2">Historians and local traditions say that a Hindu sage named "Ne" established himself in the valley of Kathmandu during prehistoric times, and that the word "Nepal" means the place protected ("pala" in Sanskrit) by the sage Ne.[3] He performed religious ceremonies at Teku, the confluence of the Bagmati and Bishnumati rivers.[4] According to legend he selected a pious cowherd to be the first of the many kings of the Gopala Dynasty.[3] These rulers are said to have ruled Nepal for over 500 years.[5] He selected Bhuktaman to be the first king in the line of the Gopal (Cowherd) Dynasty.[4] The Silncan Gopal dynasty ruled for 621 years. Yakshya Gupta was the last king of this dynasty.
+
+According to Skanda Purana, a rishi called "Ne" or "Nemuni" used to live in Himalaya.[6] In the Pashupati Purana, he is mentioned as a saint and a protector.[7] He is said to have practiced penance at the Bagmati and Kesavati rivers[8] and to have taught his doctrines there too.[3]</p>
+            <button class="hide2" id="hide2">Show Less</button>
+        </div>
+          <!--readmore button-->
+        <div class=readmore2>
+       <img class="imgcss2" src="../img/gallery/different-styles-of-temples-in-pashupatinath-premises-kathmandu-nepal.jpeg">
+            <p class="hinducss2">Hindu foundation of the Kingdom of Nepal</p>
+            <button class="read2" id="read2">Read More</button>
+        </div>
+        
+     
+    </header>
+
+
+
+    
+
+        <!--linking javascript to gallery html-->
+     <script src="../js/jquery-3.3.1.min.js"></script>
+      
+       
+        <!--jquery code-->
+        <script type="text/javascript">
+$('#toggle').click(function(){
+$("ul").fadeToggle(1000);});  
+            
+$('#read').click(function(){
+$(".foundation").fadeToggle(1000);});
+            
+            $('#hide').click(function(){
+$(".foundation").hide(1000);});
+            
+            $('#read2').click(function(){
+$(".foundation2").fadeToggle(1000);});
+            
+            $('#hide2').click(function(){
+$(".foundation2").hide(1000);});
+                        
+      
+</script>
+    
+  <!--  <footer>copyright 2018</footer>-->
+
+</body>
+</html>

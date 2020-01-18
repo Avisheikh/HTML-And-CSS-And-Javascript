@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family:"karla",Arial,sans-serif;
+    color: black;
+background-color: floralwhite;
+}
+
+#bar{
+    position: fixed;
+  text-align:left;
+   width: 220px;
+    line-height: 2.5;
+    background: black;
+    height: 750px;
+   z-index: 100;
+
+}
+
+#bar a{
+    text-decoration:none;
+    list-style: none;
+        color:grey;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 30px;
+   
+}
+
+#bar a:hover{
+    color:white;
+    transition: 1s;
+}
+
+@media screen and (max-width:768px){
+    #bar{
+        position: fixed;
+   width: 200px; 
+  padding: 0 0.5rem;
+
+}
+    #bar a{
+        font-size: 20px;
+        
+    }
+}
+
+
+@media screen and (max-width:480px){
+       #bar{
+position: fixed;
+   width: 150px; 
+ 
+}
+    #bar a{
+        font-size: 15px;
+      
+        
+    }
+} 
+    
+
+
+li{
+    list-style: none;
+}
+
+.toggle{
+    position: relative;
+    top: 15px;
+    float:right;
+    right:30px;
+   border: none;
+    background: none;
+    color:grey;
+    
+    
+}
+
+.toggle:hover{
+    color:white;
+    transition: 1s;
+}
+
+.head{
+    position: fixed;
+    background: black;
+   height: 50px;
+    opacity: 0.8;
+    width: 100%;
+    z-index: 50;
+}
+
+@media screen and (max-width:768px){
+    .head{
+        padding:o o.5rem;
+        
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .head{
+        padding:o 0.10rem;
+       
+    }
+    
+}
+
+
+
+
+.logo{
+    position: fixed;
+    top: 11.5px;
+   float: left;
+    left: 30px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.contact{
+        position:absolute;
+    width:100%;
+    top:55px;
+    color:white;
+    font-size:30px;
+    padding:10px;
+    background: black;
+    text-align: center;
+}
+
+input[type=text],input[type=number],input[type=email], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  resize: vertical;
+}
+
+.sumbitbtn{
+  background-color:darkblue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.sumbitbtn:hover{
+   opacity: 0.8;
+}
+
+
+.form{
+    position:absolute;
+    background-color:whitesmoke;
+    float:right;
+    right: 10px;
+    top:110px;
+    width:40%;
+   border:3px solid;
+    box-shadow:5px 10px #888888;
+}
+.location{
+    position: absolute;
+    float:left;
+    left: 10px;
+    top: 120px;
+    border: 2px solid red;
+    width: 57%;
+    font-size:30px;
+    text-align: center;
+    line-height: 1.5;
+    background: black;
+    color:white;
+}
+
+h2{
+    position: absolute;
+    top:680px;
+background-color:black;
+ padding: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.map{
+    position:absolute;
+    bottom:-400px;
+    float:left;
+    left: 0px;
+    width:100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.pic{
+    position: absolute;
+    top:320px;
+    float: left;
+    left: 50px;
+   
+}
